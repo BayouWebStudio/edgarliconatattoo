@@ -1,116 +1,128 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sobre Mí — Edgar Licona</title>
-  <meta name="description" content="Conoce a Edgar Licona — su filosofía, su proceso y su devoción por el arte del tatuaje.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Sobre M&#xed; &#x2014; Edgar Licona | Ciudad de M&#xe9;xico</title>
+<meta name="description" content="Soy Edgar Licona, artista del tatuaje especializado en mandala, ornamental y geometr&#xed;a sagrada. Cada pieza es un di&#xe1;logo entre precisi&#xf3;n matem&#xe1;tica y expresi&#xf3;n art&#xed;stica &#x2014; l&#xed;neas que tejen historias, patrones que sanan.">
+<link rel="canonical" href="https://eternowebstudio.com/edgarliconatattoo/about.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--black:#0a0a0a;--charcoal:#141414;--gold:#C9A84C;--white:#f5f5f0;--dim:#888;--border:rgba(255,255,255,0.07)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--black);color:var(--white);font-family:'Inter', sans-serif;font-weight:300;line-height:1.6;overflow-x:hidden}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:20px 48px;background:rgba(10,5,5,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav-logo{font-family:'Cormorant Garamond', Georgia, serif;font-size:1.3rem;font-weight:400;letter-spacing:0.1em;color:var(--white);text-decoration:none}
+.nav-links{display:flex;gap:32px;list-style:none;align-items:center}
+.nav-links a{color:var(--dim);text-decoration:none;font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;transition:color 0.2s}
+.nav-links a:hover,.nav-links a.active{color:var(--white)}
+.hamburger{display:none;background:none;border:none;cursor:pointer;padding:4px}
+.hamburger span{display:block;width:22px;height:1px;background:var(--white);margin:5px 0;transition:all 0.3s}
+.mobile-menu{display:none;position:fixed;top:65px;left:0;right:0;z-index:99;background:var(--charcoal);padding:24px 48px;border-bottom:1px solid var(--border)}
+.mobile-menu.open{display:block}
+.mobile-menu a{display:block;color:var(--white);text-decoration:none;font-size:0.85rem;letter-spacing:0.1em;text-transform:uppercase;padding:12px 0;border-bottom:1px solid var(--border)}
+.book-float{position:fixed;bottom:32px;right:32px;z-index:200;background:var(--gold);color:#000;font-family:'Inter', sans-serif;font-size:0.72rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;padding:14px 22px;border-radius:2px;box-shadow:0 4px 24px rgba(201,168,76,0.35);transition:transform 0.2s,box-shadow 0.2s}
+.book-float:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(201,168,76,0.5)}
+.fade-up{opacity:0;transform:translateY(28px);transition:opacity 0.7s ease,transform 0.7s ease}
+.fade-up.visible{opacity:1;transform:translateY(0)}
+footer{background:var(--charcoal);padding:48px 72px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center}
+.footer-logo{font-family:'Cormorant Garamond', Georgia, serif;font-size:1.1rem;color:var(--dim)}
+.footer-links{display:flex;gap:24px}
+.footer-links a{color:var(--dim);text-decoration:none;font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;transition:color 0.2s}
+.footer-links a:hover{color:var(--white)}
+.footer-copy{color:var(--dim);font-size:0.72rem}
+.section-label{font-size:0.68rem;letter-spacing:0.24em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+h2{font-family:'Cormorant Garamond', Georgia, serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:400;line-height:1.1;margin-bottom:24px}
+.btn-gold{display:inline-block;background:var(--gold);color:#000;text-decoration:none;font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;padding:16px 40px;transition:opacity 0.2s}
+.btn-gold:hover{opacity:0.88}
+.btn-outline{display:inline-block;border:1px solid var(--border);color:var(--white);text-decoration:none;font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;padding:14px 36px;transition:border-color 0.2s,color 0.2s}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold)}
+@media(max-width:900px){nav{padding:18px 24px}.nav-links{display:none}.hamburger{display:block}footer{flex-direction:column;gap:24px;padding:40px 24px;text-align:center}}
+@media(max-width:600px){footer{padding:32px 20px}}
+.page-hero{padding:160px 72px 80px;background:var(--charcoal);border-bottom:1px solid var(--border);position:relative;overflow:hidden}
+.page-hero-bg{position:absolute;inset:0;background-image:url('https://scontent-ord5-2.cdninstagram.com/v/t51.82787-15/588160872_18546749275055549_3943172940286926600_n.jpg?stp=dst-jpg_e35_p1080x1080_sh0.08_tt6&_nc_ht=scontent-ord5-2.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2gEZ_wjasBELcRjGZt_GLP6z5wjcQUeyZ_71X3UdPBgVV7LMJq1obs4__mplKO5HIA8&_nc_ohc=WG16UjZasKwQ7kNvwGPl4xx&_nc_gid=2o8yQuVpLaquK-AdtntYBg&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfzPWPJ3WkhAcD4SGxpbpUh8fTeoBqJEO0cBfeUbwEe-CQ&oe=69D13973&_nc_sid=10d13b');background-size:cover;background-position:center;filter:brightness(0.25)}
+.page-hero-content{position:relative;z-index:2}
+.page-eyebrow{font-size:0.68rem;letter-spacing:0.24em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+h1{font-family:'Cormorant Garamond', Georgia, serif;font-size:clamp(3rem,6vw,5rem);font-weight:300;line-height:1}
+.about-body{padding:96px 72px;max-width:1200px;margin:0 auto}
+.about-layout{display:grid;grid-template-columns:2fr 1fr;gap:80px;align-items:start}
+.bio-section p{color:var(--dim);line-height:1.9;margin-bottom:28px;font-size:1rem}
+.stats-section{position:sticky;top:100px}
+.stat-card{border:1px solid var(--border);padding:32px;margin-bottom:16px;text-align:center}
+.stat-big{font-family:'Cormorant Garamond', Georgia, serif;font-size:3rem;font-weight:300;color:var(--gold)}
+.stat-small{font-size:0.72rem;color:var(--dim);letter-spacing:0.12em;text-transform:uppercase;margin-top:8px}
+.specialty-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:32px}
+.tag{border:1px solid var(--border);color:var(--dim);font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;padding:8px 16px}
+@media(max-width:900px){.page-hero{padding:120px 24px 60px}.about-body{padding:60px 24px}.about-layout{grid-template-columns:1fr;gap:48px}.stats-section{position:static}}
+</style>
 </head>
 <body>
 
-  <!-- Nav -->
-  <nav class="nav">
-    <a href="index.html" class="nav__logo">Edgar Licona</a>
-    <div class="nav__hamburger">
-      <span></span><span></span><span></span>
-    </div>
-    <ul class="nav__links">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="about.html" class="active">Sobre Mí</a></li>
-      <li><a href="tattoos.html">Tatuajes</a></li>
-      <li><a href="booking.html">Reservaciones</a></li>
-      <li><a href="testimonials.html">Testimonios</a></li>
-    </ul>
-  </nav>
+<nav>
+<a href="./index.html" class="nav-logo">Edgar Licona</a>
+<ul class="nav-links">
+<li><a href="./index.html" >Inicio</a></li>
+<li><a href="./about.html" class="active">Sobre M&#xed;</a></li>
+<li><a href="./tattoos.html" >Tatuajes</a></li>
+<li><a href="./booking.html" >Reservaciones</a></li>
+<li><a href="./testimonials.html" >Testimonios</a></li>
+</ul>
+<button class="hamburger" aria-label="Menu" onclick="this.classList.toggle('open');document.querySelector('.mobile-menu').classList.toggle('open')"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu">
+<a href="./index.html">Inicio</a>
+<a href="./about.html">Sobre M&#xed;</a>
+<a href="./tattoos.html">Tatuajes</a>
+<a href="./booking.html">Reservaciones</a>
+<a href="./testimonials.html">Testimonios</a>
+</div>
+<a href="./booking.html" class="book-float">Reservar</a>
+<section class="page-hero"><div class="page-hero-bg"></div>
+<div class="page-hero-content">
+<p class="page-eyebrow fade-up">Sobre M&#xed;</p>
+<h1 class="fade-up">Edgar Licona</h1>
+</div>
+</section>
+<div class="about-body">
+<div class="about-layout">
+<div class="bio-section">
+<p class="fade-up">Soy Edgar Licona, artista del tatuaje especializado en mandala, ornamental y geometr&#xed;a sagrada. Cada pieza es un di&#xe1;logo entre precisi&#xf3;n matem&#xe1;tica y expresi&#xf3;n art&#xed;stica &#x2014; l&#xed;neas que tejen historias, patrones que sanan.</p>
+<p class="fade-up">Mi trabajo explora la relaci&#xf3;n entre la geometr&#xed;a y lo sagrado: c&#xed;rculos que contienen universos, trazos que conectan cuerpo y alma. No solo tat&#xfa;o &#x2014; construyo s&#xed;mbolos que viven en tu piel para siempre.</p>
+<p class="fade-up">Cuando trabajas conmigo, me enfoco en entender tu visi&#xf3;n antes de tocar la piel. Desde la primera consulta hasta el &#xfa;ltimo trazo, cada decisi&#xf3;n es colaborativa. Estudio en Tenebrium Tattoo, CDMX.</p>
+<p class="fade-up">Si buscas un tatuaje que sea tan &#xfa;nico como tu historia, cont&#xe1;ctame. Estamos en la Ciudad de M&#xe9;xico, pero trabajamos con clientes de todo M&#xe9;xico y m&#xe1;s all&#xe1;.</p>
+<div class="specialty-tags fade-up">
+<span class="tag">Mandala y Geometr&#xed;a</span>
+<span class="tag">CDMX</span>
+<span class="tag">Artista del Tatuaje</span>
+<span class="tag">Trabajo Personalizado</span>
+</div>
+<a href="./booking.html" class="btn-gold" style="margin-top:48px;">Reservar Sesi&#xf3;n</a>
+</div>
+<div class="stats-section">
+<div class="stat-card fade-up"><div class="stat-big">10+</div><div class="stat-small">A&#xf1;os de Experiencia</div></div>
+<div class="stat-card fade-up"><div class="stat-big">50K</div><div class="stat-small">Seguidores</div></div>
+<div class="stat-card fade-up"><div class="stat-big">CDMX</div><div class="stat-small">Ciudad Base</div></div>
+</div>
+</div>
+</div>
 
-  <!-- Page Header -->
-  <div class="page-header">
-    <p class="section-label">El Artista</p>
-    <h1>Sobre Mí</h1>
-  </div>
-
-  <!-- Bio Section -->
-  <section>
-    <div class="container">
-      <div class="about-section fade-up">
-        <div class="about-section__img">
-          <img src="img/photo_11.jpg" alt="Edgar Licona — retrato">
-        </div>
-        <div>
-          <p class="section-label">Filosofía</p>
-          <h2>El cuerpo como templo</h2>
-          <p>Para mí, tatuar no es solo un oficio — es un acto devocional. Cada línea trazada sobre la piel es una oración silenciosa, cada sesión un ritual compartido entre artista y portador.</p>
-          <br>
-          <p>Me especializo en neo-japonés, ornamental y geometría sagrada. Mi trabajo vive en la escala monumental: espaldas completas, mangas que envuelven el cuerpo como armaduras sagradas, piezas de cuello y pecho que transforman la anatomía en arquitectura viva.</p>
-          <br>
-          <p>Mis influencias beben de las máscaras Hannya del teatro Noh, la simetría ritual de los mandalas tibetanos, y la precisión matemática de la geometría sagrada. Trabajo exclusivamente en negro y gris, encontrando en la ausencia de color una profundidad que el espectro completo no alcanza.</p>
-          <br>
-          <p>Cada proyecto comienza con una conversación profunda. No tatúo diseños — tatúo intenciones. Creo que el cuerpo es un lienzo sagrado que merece respeto absoluto, y que cada marca permanente debe nacer de un lugar de significado auténtico.</p>
-          <div class="divider divider--left"></div>
-          <div class="stats">
-            <div class="stat">
-              <div class="stat__number">10+</div>
-              <div class="stat__label">Años de Experiencia</div>
-            </div>
-            <div class="stat">
-              <div class="stat__number">500+</div>
-              <div class="stat__label">Piezas Completadas</div>
-            </div>
-            <div class="stat">
-              <div class="stat__number">100+</div>
-              <div class="stat__label">Espaldas Completas</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Process Section -->
-  <section style="background: var(--bg2); border-top: 1px solid rgba(201,169,110,.08); border-bottom: 1px solid rgba(201,169,110,.08);">
-    <div class="container text-center fade-up">
-      <p class="section-label">Mi Proceso</p>
-      <h2>Del concepto a la piel</h2>
-      <div class="divider"></div>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 3rem; margin-top: 3rem; text-align: center;">
-        <div>
-          <h3>01 — Consulta</h3>
-          <p class="mx-auto" style="color: var(--muted);">Conversamos sobre tu visión, intención y la historia que quieres portar en tu piel.</p>
-        </div>
-        <div>
-          <h3>02 — Diseño</h3>
-          <p class="mx-auto" style="color: var(--muted);">Creo un diseño personalizado que respeta la anatomía de tu cuerpo y fluye con tu forma natural.</p>
-        </div>
-        <div>
-          <h3>03 — Ritual</h3>
-          <p class="mx-auto" style="color: var(--muted);">La sesión de tatuaje es un espacio sagrado — concentración, respeto y devoción absoluta al oficio.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta-banner">
-    <div class="container fade-up">
-      <p class="section-label">Siguiente Paso</p>
-      <h2>Comencemos tu pieza</h2>
-      <p>Cuéntame tu visión. Juntos la haremos permanente.</p>
-      <a href="booking.html" class="btn btn--solid">Reservar Cita</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer__social">
-      <a href="https://instagram.com/edgarliconatattoo" target="_blank" rel="noopener">Instagram</a>
-    </div>
-    <p class="footer__powered">Powered by <a href="https://eternowebstudio.com" target="_blank" rel="noopener">Eterno Web Studio</a></p>
-  </footer>
-
-  <script src="js/main.js"></script>
+<footer>
+<div class="footer-logo">Edgar Licona</div>
+<div class="footer-links">
+<a href="./index.html">Inicio</a>
+<a href="./about.html">Sobre M&#xed;</a>
+<a href="./tattoos.html">Tatuajes</a>
+<a href="./booking.html">Reservaciones</a>
+<a href="https://www.instagram.com/edgarliconatattoo" target="_blank" rel="noopener">Instagram</a>
+</div>
+<div class="footer-copy">&#xa9; 2026 Edgar Licona</div>
+</footer>
+<script>
+var obs=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('visible');obs.unobserve(x.target);}});},{threshold:0.12});
+document.querySelectorAll('.fade-up').forEach(function(el){obs.observe(el);});
+</script>
 </body>
 </html>
