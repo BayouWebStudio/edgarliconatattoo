@@ -1,85 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tatuajes — Edgar Licona</title>
-  <meta name="description" content="Galería completa de tatuajes por Edgar Licona — neo-japonés, ornamental, geometría sagrada.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Tatuajes &#x2014; Edgar Licona | Mandala y Geometr&#xed;a</title>
+<meta name="description" content="Portfolio de tatuajes Mandala y Geometr&#xed;a de Edgar Licona en Ciudad de M&#xe9;xico.">
+<link rel="canonical" href="https://eternowebstudio.com/edgarliconatattoo/tattoos.html">
+<meta property="og:title" content="Tatuajes &#x2014; Edgar Licona">
+<meta property="og:image" content="https://scontent-iad3-1.cdninstagram.com/v/t51.82787-15/626858922_18423357931140289_5312340847018841824_n.jpg?stp=dst-jpg_e35_p1080x1080_sh0.08_tt6&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2gH2sHJu4uTWhDqujEsM8aqqJ0e9vjvCjwj7SbFrmJdPWI9YzKiDblqtV-GDPtT6pFQ&_nc_ohc=FeRlOPTtqxwQ7kNvwFOLEyI&_nc_gid=jyqBad66eEB5rBFkPTGG0w&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfxHXXAjVW8d7x5e7UTgivqEJdt6t8F1hxnJQy4v031udQ&oe=69D127F0&_nc_sid=10d13b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--black:#0a0a0a;--charcoal:#141414;--gold:#C9A84C;--white:#f5f5f0;--dim:#888;--border:rgba(255,255,255,0.07)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--black);color:var(--white);font-family:'Inter', sans-serif;font-weight:300;line-height:1.6;overflow-x:hidden}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:20px 48px;background:rgba(10,5,5,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav-logo{font-family:'Cormorant Garamond', Georgia, serif;font-size:1.3rem;font-weight:400;letter-spacing:0.1em;color:var(--white);text-decoration:none}
+.nav-links{display:flex;gap:32px;list-style:none;align-items:center}
+.nav-links a{color:var(--dim);text-decoration:none;font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;transition:color 0.2s}
+.nav-links a:hover,.nav-links a.active{color:var(--white)}
+.hamburger{display:none;background:none;border:none;cursor:pointer;padding:4px}
+.hamburger span{display:block;width:22px;height:1px;background:var(--white);margin:5px 0;transition:all 0.3s}
+.mobile-menu{display:none;position:fixed;top:65px;left:0;right:0;z-index:99;background:var(--charcoal);padding:24px 48px;border-bottom:1px solid var(--border)}
+.mobile-menu.open{display:block}
+.mobile-menu a{display:block;color:var(--white);text-decoration:none;font-size:0.85rem;letter-spacing:0.1em;text-transform:uppercase;padding:12px 0;border-bottom:1px solid var(--border)}
+.book-float{position:fixed;bottom:32px;right:32px;z-index:200;background:var(--gold);color:#000;font-family:'Inter', sans-serif;font-size:0.72rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;padding:14px 22px;border-radius:2px;box-shadow:0 4px 24px rgba(201,168,76,0.35);transition:transform 0.2s,box-shadow 0.2s}
+.book-float:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(201,168,76,0.5)}
+.fade-up{opacity:0;transform:translateY(28px);transition:opacity 0.7s ease,transform 0.7s ease}
+.fade-up.visible{opacity:1;transform:translateY(0)}
+footer{background:var(--charcoal);padding:48px 72px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center}
+.footer-logo{font-family:'Cormorant Garamond', Georgia, serif;font-size:1.1rem;color:var(--dim)}
+.footer-links{display:flex;gap:24px}
+.footer-links a{color:var(--dim);text-decoration:none;font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;transition:color 0.2s}
+.footer-links a:hover{color:var(--white)}
+.footer-copy{color:var(--dim);font-size:0.72rem}
+.section-label{font-size:0.68rem;letter-spacing:0.24em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+h2{font-family:'Cormorant Garamond', Georgia, serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:400;line-height:1.1;margin-bottom:24px}
+.btn-gold{display:inline-block;background:var(--gold);color:#000;text-decoration:none;font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;padding:16px 40px;transition:opacity 0.2s}
+.btn-gold:hover{opacity:0.88}
+.btn-outline{display:inline-block;border:1px solid var(--border);color:var(--white);text-decoration:none;font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;padding:14px 36px;transition:border-color 0.2s,color 0.2s}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold)}
+@media(max-width:900px){nav{padding:18px 24px}.nav-links{display:none}.hamburger{display:block}footer{flex-direction:column;gap:24px;padding:40px 24px;text-align:center}}
+@media(max-width:600px){footer{padding:32px 20px}}
+.page-hero{padding:140px 72px 64px;background:var(--charcoal);border-bottom:1px solid var(--border)}
+.page-eyebrow{font-size:0.68rem;letter-spacing:0.24em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+h1{font-family:'Cormorant Garamond', Georgia, serif;font-size:clamp(3rem,6vw,5rem);font-weight:300;line-height:1}
+.gallery-body{padding:72px;max-width:1400px;margin:0 auto}
+.masonry-grid{columns:3;column-gap:3px}
+.masonry-item{break-inside:avoid;margin-bottom:3px;overflow:hidden}
+.masonry-item img{width:100%;display:block;filter:brightness(0.85);transition:filter 0.3s}
+.masonry-item:hover img{filter:brightness(1)}
+.booking-cta-section{padding:72px;text-align:center;background:var(--charcoal)}
+.booking-cta-section h2{max-width:500px;margin:0 auto 16px}
+.booking-cta-section p{color:var(--dim);max-width:400px;margin:0 auto 32px;font-size:0.92rem}
+@media(max-width:900px){.page-hero{padding:120px 24px 48px}.gallery-body{padding:48px 12px}.masonry-grid{columns:2}.booking-cta-section{padding:60px 24px}}
+</style>
 </head>
 <body>
 
-  <!-- Nav -->
-  <nav class="nav">
-    <a href="index.html" class="nav__logo">Edgar Licona</a>
-    <div class="nav__hamburger">
-      <span></span><span></span><span></span>
-    </div>
-    <ul class="nav__links">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="about.html">Sobre Mí</a></li>
-      <li><a href="tattoos.html" class="active">Tatuajes</a></li>
-      <li><a href="booking.html">Reservaciones</a></li>
-      <li><a href="testimonials.html">Testimonios</a></li>
-    </ul>
-  </nav>
+<nav>
+<a href="./index.html" class="nav-logo">Edgar Licona</a>
+<ul class="nav-links">
+<li><a href="./index.html" >Inicio</a></li>
+<li><a href="./about.html" >Sobre M&#xed;</a></li>
+<li><a href="./tattoos.html" class="active">Tatuajes</a></li>
+<li><a href="./booking.html" >Reservaciones</a></li>
+<li><a href="./testimonials.html" >Testimonios</a></li>
+</ul>
+<button class="hamburger" aria-label="Menu" onclick="this.classList.toggle('open');document.querySelector('.mobile-menu').classList.toggle('open')"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu">
+<a href="./index.html">Inicio</a>
+<a href="./about.html">Sobre M&#xed;</a>
+<a href="./tattoos.html">Tatuajes</a>
+<a href="./booking.html">Reservaciones</a>
+<a href="./testimonials.html">Testimonios</a>
+</div>
+<a href="./booking.html" class="book-float">Reservar</a>
+<section class="page-hero">
+<p class="page-eyebrow fade-up">Portafolio</p>
+<h1 class="fade-up">Tatuajes</h1>
+</section>
+<div class="gallery-body">
+<div class="masonry-grid">
+<div class="masonry-item fade-up"><img src="https://scontent-iad3-1.cdninstagram.com/v/t51.82787-15/626858922_18423357931140289_5312340847018841824_n.jpg?stp=dst-jpg_e35_p1080x1080_sh0.08_tt6&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_cat=101&_nc_oc=Q6cZ2gH2sHJu4uTWhDqujEsM8aqqJ0e9vjvCjwj7SbFrmJdPWI9YzKiDblqtV-GDPtT6pFQ&_nc_ohc=FeRlOPTtqxwQ7kNvwFOLEyI&_nc_gid=jyqBad66eEB5rBFkPTGG0w&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfxHXXAjVW8d7x5e7UTgivqEJdt6t8F1hxnJQy4v031udQ&oe=69D127F0&_nc_sid=10d13b" alt="Tatuaje 1" loading="lazy"></div><div class="masonry-item fade-up"><img src="https://scontent-ord5-2.cdninstagram.com/v/t51.82787-15/588160872_18546749275055549_3943172940286926600_n.jpg?stp=dst-jpg_e35_p1080x1080_sh0.08_tt6&_nc_ht=scontent-ord5-2.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2gEZ_wjasBELcRjGZt_GLP6z5wjcQUeyZ_71X3UdPBgVV7LMJq1obs4__mplKO5HIA8&_nc_ohc=WG16UjZasKwQ7kNvwGPl4xx&_nc_gid=2o8yQuVpLaquK-AdtntYBg&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfzPWPJ3WkhAcD4SGxpbpUh8fTeoBqJEO0cBfeUbwEe-CQ&oe=69D13973&_nc_sid=10d13b" alt="Tatuaje 2" loading="lazy"></div><div class="masonry-item fade-up"><img src="https://scontent-ord5-2.cdninstagram.com/v/t51.82787-15/628426413_18560328151055549_6922960506195640685_n.jpg?stp=dst-jpg_e35_p1080x1080_sh0.08_tt6&_nc_ht=scontent-ord5-2.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2gGCJ_7RzQAb1Hhdx8N7OxrCpYDiUFI2Z54S4DXyUXP8ByHivqd8_7Sp0SXeFmzgjeo&_nc_ohc=gh72d_WWmoQQ7kNvwE30FQ0&_nc_gid=oJ1W_OoIZ8Fc8E_zia1low&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfxLRpYMKetHIYxMclgqpdWBe_FChhV7vGcNTW40UtT7w&oe=69D11EFF&_nc_sid=10d13b" alt="Tatuaje 3" loading="lazy"></div><div class="masonry-item fade-up"><img src="https://scontent-ord5-2.cdninstagram.com/v/t51.82787-15/625045908_18558273361055549_403289161449768582_n.jpg?stp=dst-jpg_e35_p1080x1080_sh0.08_tt6&_nc_ht=scontent-ord5-2.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2gFW6E-yvn7yDRMQUsSxXsP77x6VZj1XLsi_T3N8NCAMWod9inJRn2ACRwSiW14lbWg&_nc_ohc=5TkPdBCHwpAQ7kNvwHpoDGG&_nc_gid=z2DU4-lSnxbLhH_FE-E_qw&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfzGT91uXb5UEYLO2qfaN7vICNTHXDfwCmgT4KhUcppsQA&oe=69D136FD&_nc_sid=10d13b" alt="Tatuaje 4" loading="lazy"></div><div class="masonry-item fade-up"><img src="https://scontent-ord5-2.cdninstagram.com/v/t51.82787-15/631550014_18562574995055549_8376681814449380132_n.jpg?stp=dst-jpg_e35_p1080x1080_sh0.08_tt6&_nc_ht=scontent-ord5-2.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2gEQ-0jhkbyRU8Qnp5XCWQTm7zHiYjyaWpCTIho0s-NTxtq97-AiuYeUO2HH9by6H7s&_nc_ohc=EW5Y71PRveoQ7kNvwFzYiGB&_nc_gid=9AR3941t3DEQU8iBT8LL0A&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfwoPg4h4P6AFiggJVTilAxPwSuFTrTvvBbiVKL6-LF0eg&oe=69D1097A&_nc_sid=10d13b" alt="Tatuaje 5" loading="lazy"></div>
+</div>
+</div>
+<section class="booking-cta-section">
+<p class="section-label fade-up">Reserva</p>
+<h2 class="fade-up">&#xbf;Algo te inspir&#xf3;?</h2>
+<p class="fade-up">Hagamos tu visi&#xf3;n realidad.</p>
+<a href="./booking.html" class="btn-gold fade-up">Reservar Sesi&#xf3;n</a>
+</section>
 
-  <!-- Page Header -->
-  <div class="page-header">
-    <p class="section-label">Portafolio</p>
-    <h1>Tatuajes</h1>
-    <p>Neo-Japonés · Ornamental · Geometría Sagrada</p>
-  </div>
+<footer>
+<div class="footer-logo">Edgar Licona</div>
+<div class="footer-links">
+<a href="./index.html">Inicio</a>
+<a href="./about.html">Sobre M&#xed;</a>
+<a href="./tattoos.html">Tatuajes</a>
+<a href="./booking.html">Reservaciones</a>
+<a href="https://www.instagram.com/edgarliconatattoo" target="_blank" rel="noopener">Instagram</a>
+</div>
+<div class="footer-copy">&#xa9; 2026 Edgar Licona</div>
+</footer>
 
-  <!-- Gallery -->
-  <section>
-    <div class="container">
-      <div class="masonry-grid fade-up" data-lightbox>
-        <div class="masonry-grid__item"><img src="img/photo_01.jpg" alt="Tatuaje por Edgar Licona"></div>
-        <div class="masonry-grid__item"><img src="img/photo_02.jpg" alt="Tatuaje por Edgar Licona"></div>
-        <div class="masonry-grid__item"><img src="img/photo_03.jpg" alt="Tatuaje por Edgar Licona"></div>
-        <div class="masonry-grid__item"><img src="img/photo_04.jpg" alt="Tatuaje por Edgar Licona"></div>
-        <div class="masonry-grid__item"><img src="img/photo_05.jpg" alt="Tatuaje por Edgar Licona"></div>
-        <div class="masonry-grid__item"><img src="img/photo_06.jpg" alt="Tatuaje por Edgar Licona"></div>
-        <div class="masonry-grid__item"><img src="img/photo_07.jpg" alt="Tatuaje por Edgar Licona"></div>
-        <div class="masonry-grid__item"><img src="img/photo_08.jpg" alt="Tatuaje por Edgar Licona"></div>
-        <div class="masonry-grid__item"><img src="img/photo_09.jpg" alt="Tatuaje por Edgar Licona"></div>
-        <div class="masonry-grid__item"><img src="img/photo_10.jpg" alt="Tatuaje por Edgar Licona"></div>
-        <div class="masonry-grid__item"><img src="img/photo_11.jpg" alt="Tatuaje por Edgar Licona"></div>
-        <div class="masonry-grid__item"><img src="img/photo_12.jpg" alt="Tatuaje por Edgar Licona"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta-banner">
-    <div class="container fade-up">
-      <p class="section-label">¿Te inspira lo que ves?</p>
-      <h2>Hagamos realidad tu visión</h2>
-      <p>Cada pieza es única. Cuéntame qué tienes en mente.</p>
-      <a href="booking.html" class="btn btn--solid">Reservar Cita</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer__social">
-      <a href="https://instagram.com/edgarliconatattoo" target="_blank" rel="noopener">Instagram</a>
-    </div>
-    <p class="footer__powered">Powered by <a href="https://eternowebstudio.com" target="_blank" rel="noopener">Eterno Web Studio</a></p>
-  </footer>
-
-  <!-- Lightbox -->
-  <div class="lightbox">
-    <button class="lightbox__close">&times;</button>
-    <button class="lightbox__nav lightbox__nav--prev">&#8249;</button>
-    <button class="lightbox__nav lightbox__nav--next">&#8250;</button>
-    <img class="lightbox__img" src="" alt="Lightbox">
-  </div>
-
-  <script src="js/main.js"></script>
+<div id="lb" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.95);align-items:center;justify-content:center;cursor:zoom-out;" onclick="if(event.target===this)closeLB()">
+<button onclick="closeLB()" style="position:absolute;top:20px;right:24px;background:none;border:none;color:#fff;font-size:2.2rem;cursor:pointer;z-index:10001;line-height:1;padding:8px;">&#xd7;</button>
+<img id="lb-img" src="" alt="" style="max-width:92vw;max-height:92vh;object-fit:contain;" onclick="event.stopPropagation()">
+</div>
+<script>
+(function(){
+var lb=document.getElementById('lb'),lbImg=document.getElementById('lb-img'),imgs=[],idx=0;
+function open(i){idx=i;lbImg.src=imgs[idx];lb.style.display='flex';document.body.style.overflow='hidden';}
+function close(){lb.style.display='none';document.body.style.overflow='';}
+window.closeLB=close;
+document.addEventListener('keydown',function(e){if(lb.style.display==='flex'){if(e.key==='Escape')close();}});
+document.querySelectorAll('.masonry-item img,.gallery-item img').forEach(function(img){imgs.push(img.src);img.style.cursor='zoom-in';img.addEventListener('click',function(e){e.preventDefault();open(imgs.indexOf(img.src));});});
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('.masonry-item img,.gallery-item img').forEach(function(img){imgs.push(img.src);});});else{document.querySelectorAll('.masonry-item img,.gallery-item img').forEach(function(img){imgs.push(img.src);});}
+})();
+</script>
+<script>
+var obs=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('visible');obs.unobserve(x.target);}});},{threshold:0.12});
+document.querySelectorAll('.fade-up').forEach(function(el){obs.observe(el);});
+</script>
 </body>
 </html>
